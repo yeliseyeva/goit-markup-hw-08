@@ -11,13 +11,17 @@ footer{
     padding-bottom: 60px;
 
     .footer-conteiner{
-        display: flex;
-        align-items: baseline;
+        // display: flex;
+        // align-items: baseline;
+
+        @media screen and (min-width: 480px){
+            text-align: center;
+        }
     }
 }
 
 .address-footer{
-    margin-right: 70px;
+    // margin-right: 70px;
 
     .logo-footer{   
         display: inline-block;
@@ -30,11 +34,18 @@ footer{
     address{
         font-style: normal;
 
+        @media screen and (min-width: 480px){
+            margin-bottom: 8px;
+        }
+
         margin-bottom: 9px;
     }
 }
 
 .footer-link:not(:last-child) {
+    @media screen and (min-width: 480px){
+        margin-bottom: 8px;
+    }
     margin-bottom: 9px;
 }
 

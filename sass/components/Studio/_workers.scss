@@ -8,17 +8,29 @@
     letter-spacing: 0.03em;
 
     .workers-list{
-        display: flex;
+        
+        // display: flex;
     }
 }
 
-.workers-name:not(:last-child){
-    margin-right: 30px;
-}
+// .workers-name:not(:last-child){
+//     margin-right: 30px;
+// }
 
 .workers-name{
-    width: 270px;
-    height: 428px;
+    // width: 270px;
+    // height: 428px;
+
+    @media screen and (min-width: 480px){
+        width: 450px;
+        height: 622px;
+    }
+
+    &:not(:last-child){
+        @media screen and (min-width: 480px){
+            margin-bottom: 30px;
+        }
+    }
 
     text-align: center;
 
@@ -35,14 +47,21 @@
     
     img{
         margin-bottom: 30px;
+
+        @media screen and (min-width: 480px){
+            width: 450px;
+            height: 460px;
+        }
+
     }
 }
 
 .container-links{
     display: flex;
 
-    margin-left: 32px;
-    margin-right: 32px;
+    // margin-left: 32px;
+    // margin-right: 32px;
+    justify-content: center;
     margin-top: 16px;
 
     .workers-link:hover,

@@ -1,5 +1,9 @@
 .development{
     padding-top: 0px;
+
+    @media screen and (min-width: 480px){
+        display: none;
+    }
 }
 
 .work-list{
