@@ -43,24 +43,24 @@ header{
 
 .logo-header{
     color: $primary-text-color;
-    // margin-right: 93px;
+    margin-right: 93px;
 
-    @media screen and (min-width: 480px){
+    @media screen and (max-width: 479px){
         padding-top: 16px;
         padding-bottom: 16px;
     }
     
-    @media screen and (min-width: 768px){
+    @media screen and (max-width: 767px){
         margin-right: 88px;
     }
 
-    @media screen and (min-width: 768px){
-        margin-right: 93px;
-    }
+    // @media screen and (max-width: 1199px){
+    //     margin-right: 93px;
+    // }
 }
 
 .menu-button{
-    @media screen and (min-width: 480px){
+    @media screen and (max-width: 479px){
         position: absolute;
         top: 10px;
         right: 15px;
@@ -98,17 +98,15 @@ header{
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    @media screen and (min-width: 480px){
+    @media screen and (max-width: 479px){
         display: none;
     }
 
     @media screen and (min-width: 768px){
         display: flex;
-        font-size: 12px;
     }
 
     @media screen and (min-width: 1200px){
-        font-size: 14px;
     }
 }
 
@@ -134,8 +132,18 @@ header{
     margin-bottom: 0;
     align-items: center;
 
+    @media screen and (max-width: 479px){
+        display: none;
+    }
+
+    @media screen and (min-width: 768px){
+        display: block;
+        margin-left: auto;
+    }
+
     @media screen and (min-width: 1200px){
         display: flex;
+        padding: 32px 0px;
         margin-left: auto;
     }
 
@@ -153,26 +161,12 @@ header{
 
     
     a{
+        font-size: 12px;
+
         color: $secondary-text-color;
-        
-        // display: flex;
-        // padding: 32px 0px;
     
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
 
-    @media screen and (min-width: 480px){
-        display: none;
-    }
-
-    @media screen and (min-width: 768px){
-        display: block;
-        margin-left: 84px;
-    }
-
-    @media screen and (min-width: 1200px){
-        display: flex;
-        padding: 32px 0px;
     }
 }
 

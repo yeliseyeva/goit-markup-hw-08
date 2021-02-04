@@ -8,8 +8,9 @@
 }
 
 .advantages li{
+
     &:not(:last-child){
-        @media screen and (min-width: 480px){
+        @media screen and (max-width: 479px){
             margin-bottom: 30px;
         }
     }
@@ -24,7 +25,7 @@
 
     background-color: #F5F4FA;
 
-    @media screen and (min-width: 480px){
+    @media screen and (max-width: 479px){
         height: 120px;
         width: 450px;
     }
@@ -40,7 +41,7 @@
 .advantages h3{
     margin-bottom: 10px;
 
-    @media screen and (min-width: 480px){
+    @media screen and (max-width: 479px){
         text-align: center;
     }
 }

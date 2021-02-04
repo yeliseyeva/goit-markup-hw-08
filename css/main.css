@@ -31,7 +31,7 @@ body {
   color: #212121;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px) {
   body {
     padding-top: 60px;
   }
@@ -79,7 +79,7 @@ h2 {
   background-color: #fff;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px) {
   .description-page {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -119,7 +119,7 @@ p {
   letter-spacing: 0.03em;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px) {
   .title {
     margin-bottom: 30px;
   }
@@ -198,28 +198,23 @@ header .conteiner {
 
 .logo-header {
   color: #212121;
+  margin-right: 93px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px) {
   .logo-header {
     padding-top: 16px;
     padding-bottom: 16px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .logo-header {
     margin-right: 88px;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .logo-header {
-    margin-right: 93px;
-  }
-}
-
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px) {
   .menu-button {
     position: absolute;
     top: 10px;
@@ -260,7 +255,7 @@ header .conteiner {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px) {
   .nav {
     display: none;
   }
@@ -271,13 +266,6 @@ header .conteiner {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 12px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .nav {
-    font-size: 14px;
   }
 }
 
@@ -302,11 +290,25 @@ header .conteiner {
           align-items: center;
 }
 
+@media screen and (max-width: 479px) {
+  .address {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .address {
+    display: block;
+    margin-left: auto;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding: 32px 0px;
     margin-left: auto;
   }
 }
@@ -324,31 +326,10 @@ header .conteiner {
 }
 
 .address a {
+  font-size: 12px;
   color: #757575;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media screen and (min-width: 480px) {
-  .address {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .address {
-    display: block;
-    margin-left: 84px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .address {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 32px 0px;
-  }
 }
 
 .icon-contacts {
@@ -387,24 +368,51 @@ header .conteiner {
   text-align: center;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px) {
   .hero {
     width: 480px;
     height: 400px;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 1600px;
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 479px) {
   .hero-conteiner {
     padding-top: 118px;
     padding-bottom: 118px;
   }
 }
 
+@media screen and (min-width: 768px) {
+  .hero-conteiner {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-conteiner {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
 .hero-conteiner .hero-title {
   color: #fff;
   font-weight: 900;
-  font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   margin-bottom: 30px;
@@ -413,6 +421,18 @@ header .conteiner {
 @media screen and (min-width: 480px) {
   .hero-conteiner .hero-title {
     font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-conteiner .hero-title {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-conteiner .hero-title {
+    font-size: 44px;
   }
 }
 
@@ -428,7 +448,7 @@ header .conteiner {
   border-radius: 4px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px) {
   .advantages li:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -442,7 +462,7 @@ header .conteiner {
   background-color: #F5F4FA;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px) {
   .advanages-svg {
     height: 120px;
     width: 450px;
@@ -459,7 +479,7 @@ header .conteiner {
   margin-bottom: 10px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px) {
   .advantages h3 {
     text-align: center;
   }
@@ -469,7 +489,7 @@ header .conteiner {
   padding-top: 0px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px) {
   .development {
     display: none;
   }
@@ -517,6 +537,12 @@ header .conteiner {
   letter-spacing: 0.03em;
 }
 
+@media screen and (max-width: 479px) {
+  .workers {
+    width: 480px;
+  }
+}
+
 .workers-name {
   text-align: center;
   background-color: #fff;
@@ -524,14 +550,14 @@ header .conteiner {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px) {
   .workers-name {
     width: 450px;
     height: 622px;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px) {
   .workers-name:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -598,13 +624,13 @@ header .conteiner {
       flex-wrap: wrap;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px) {
   .clients {
     margin: -15px;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px) {
   .clients .clients-item {
     margin: 15px;
   }
@@ -627,7 +653,7 @@ header .conteiner {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px) {
   .clients-link {
     width: 210px;
     height: 90px;
