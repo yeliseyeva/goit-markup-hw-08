@@ -1,6 +1,6 @@
 .hero{
     // height: 600px;
-    // max-width: 1600px;
+    width: 480px;
     margin-left: auto;
     margin-right: auto;
 
@@ -14,7 +14,7 @@
 
     text-align: center;
 
-    @media screen and (max-width: 479px){
+    @media screen and (min-width: 480px){
         width: 480px;
         height: 400px;
     }
@@ -31,12 +31,7 @@
 }
 
 .hero-conteiner{
-    @media screen and (max-width: 479px){
-        padding-top: 118px;
-        padding-bottom: 118px;
-    }
-
-    @media screen and (min-width: 768px){
+    @media screen and (max-width: 1199px){
         padding-top: 118px;
         padding-bottom: 118px;
     }
@@ -56,11 +51,7 @@
     
         margin-bottom: 30px;
 
-        @media screen and (min-width: 480px){
-            font-size: 26px;
-        }
-
-        @media screen and (min-width: 768px){
+        @media screen and (max-width: 1199px){
             font-size: 26px;
         }
 

@@ -31,13 +31,15 @@ body {
   color: #212121;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   body {
     padding-top: 60px;
   }
 }
 
 .conteiner {
+  border: 3px solid tomato;
+  width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -69,17 +71,19 @@ h2 {
   letter-spacing: 0.03em;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   h2 {
     font-size: 28px;
   }
 }
 
 .description-page {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: #fff;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 1199px) {
   .description-page {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -119,9 +123,15 @@ p {
   letter-spacing: 0.03em;
 }
 
-@media screen and (max-width: 479px) {
+.title {
+  margin-bottom: 50px;
+  font-size: 36px;
+}
+
+@media screen and (max-width: 1199px) {
   .title {
     margin-bottom: 30px;
+    font-size: 28px;
   }
 }
 
@@ -155,6 +165,7 @@ img {
 header {
   position: fixed;
   width: 100%;
+  min-height: 80px;
   top: 0;
   left: 0;
   z-index: 1;
@@ -163,6 +174,12 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
   border-bottom: solid 1px #ececec;
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    min-height: 60px;
+  }
 }
 
 header .conteiner {
@@ -175,33 +192,12 @@ header .conteiner {
           align-items: center;
 }
 
-@media screen and (min-width: 480px) {
-  header {
-    width: 480px;
-    min-height: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  header {
-    width: 768px;
-    min-height: 80px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  header {
-    width: 1600px;
-    min-height: 80px;
-  }
-}
-
 .logo-header {
   color: #212121;
   margin-right: 93px;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .logo-header {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -214,7 +210,7 @@ header .conteiner {
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .menu-button {
     position: absolute;
     top: 10px;
@@ -238,6 +234,12 @@ header .conteiner {
           align-items: center;
 }
 
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .nav li:not(:last-child) {
   margin-right: 50px;
 }
@@ -255,17 +257,9 @@ header .conteiner {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .nav {
     display: none;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
 }
 
@@ -290,7 +284,7 @@ header .conteiner {
           align-items: center;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .address {
     display: none;
   }
@@ -313,7 +307,7 @@ header .conteiner {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .address li:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -326,10 +320,19 @@ header .conteiner {
 }
 
 .address a {
-  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
   color: #757575;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 1199px) {
+  .address a {
+    font-size: 12px;
+  }
 }
 
 .icon-contacts {
@@ -357,6 +360,7 @@ header .conteiner {
 }
 
 .hero {
+  width: 480px;
   margin-left: auto;
   margin-right: auto;
   background-color: #2F303A;
@@ -368,7 +372,7 @@ header .conteiner {
   text-align: center;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (min-width: 480px) {
   .hero {
     width: 480px;
     height: 400px;
@@ -389,14 +393,7 @@ header .conteiner {
   }
 }
 
-@media screen and (max-width: 479px) {
-  .hero-conteiner {
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .hero-conteiner {
     padding-top: 118px;
     padding-bottom: 118px;
@@ -418,13 +415,7 @@ header .conteiner {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 480px) {
-  .hero-conteiner .hero-title {
-    font-size: 26px;
-  }
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .hero-conteiner .hero-title {
     font-size: 26px;
   }
@@ -448,9 +439,44 @@ header .conteiner {
   border-radius: 4px;
 }
 
-@media screen and (max-width: 479px) {
-  .advantages li:not(:last-child) {
+@media screen and (min-width: 768px) {
+  .advantages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .advantages-item:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-item {
+    width: calc((100% - 2 * 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-item {
+    margin: 15px;
   }
 }
 
@@ -462,10 +488,24 @@ header .conteiner {
   background-color: #F5F4FA;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .advanages-svg {
     height: 120px;
     width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advanages-svg {
+    height: 120px;
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advanages-svg {
+    height: 120px;
+    width: 270px;
   }
 }
 
@@ -479,7 +519,7 @@ header .conteiner {
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .advantages h3 {
     text-align: center;
   }
@@ -537,7 +577,7 @@ header .conteiner {
   letter-spacing: 0.03em;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 480px) {
   .workers {
     width: 480px;
   }
