@@ -10,18 +10,54 @@ footer{
     padding-top: 60px;
     padding-bottom: 60px;
 
+    @media screen and (max-width: 480px){
+        width: 480px;
+    }
+
     .footer-conteiner{
         // display: flex;
         // align-items: baseline;
 
-        @media screen and (min-width: 480px){
+        @media screen and (max-width: 767px){
             text-align: center;
         }
+
+        @media screen and (min-width: 1200px){
+            display: flex;
+        }
+    }
+}
+
+.address-social{
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+        text-align: center;
+        align-items: baseline;
+    }
+
+    @media screen and (min-width: 1200px){
+        display: flex;
+        align-items: baseline;
     }
 }
 
 .address-footer{
     // margin-right: 70px;
+
+    @media screen and (max-width: 767px){
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 768px) and  (max-width: 1199px){
+        margin-right: 165px;
+    }
+
+    @media screen and (min-width: 1200px){
+        margin-right: 70px;
+    }
+
 
     .logo-footer{   
         display: inline-block;
@@ -55,16 +91,24 @@ footer{
 
 /* Присоединяйтесь */
 
-.social p{
-    margin-bottom: 20px;
+.social {
+    @media screen and (max-width: 767px){
+        margin-bottom: 60px;
+    }
 
-    font-weight: 700;
-
-    color: #fff;
+    p{
+        margin-bottom: 20px;
+        
+        font-weight: 700;
+        
+        color: #fff;
+    }
 }
 
+
+
 .social-conteiner{
-    display: flex;
+    display: inline-flex;
 
     .social-item:not(:last-child){
         margin-right: 10px;
@@ -100,6 +144,10 @@ footer{
 .footer-form{
     margin-left: auto;
 
+    @media screen and (max-width: 1199px){
+        text-align: center;
+    }
+
     label{
         display: block;
     
@@ -110,23 +158,46 @@ footer{
     }
 
     input{
+
         padding: 16px 15px;
-        margin-right: 12px;
+        
     
         font-size: 16px;
     
         background-color: #2F303A;
-        width: 358px;
-        height: 50px;
+        // width: 358px;
+        // height: 50px;
     
         outline: none;
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 4px;
         cursor: pointer;
+
+        @media screen and (max-width: 1199px){
+            display: block;
+            width: 450px;
+            height: 50px;
+
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media screen and (min-width: 1200px){
+            width: 358px;
+            height: 50px;
+            margin-right: 12px;
+        }
     }
 
     input:focus{
         color: #fff;
+    }
+}
+
+.button-form{
+    @media screen and (min-width: 1200px){
+        display: flex;
     }
 }
 
