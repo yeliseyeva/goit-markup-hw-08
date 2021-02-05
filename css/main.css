@@ -38,8 +38,7 @@ body {
 }
 
 .conteiner {
-  border: 3px solid tomato;
-  width: 480px;
+  min-width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -580,6 +579,18 @@ header .conteiner {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .workers .workers-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: -15px;
   }
 }
 
@@ -590,18 +601,26 @@ header .conteiner {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .workers-name {
     width: 450px;
     height: 622px;
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .workers-name {
     width: 354px;
     height: 536px;
-    width: calc((100%-2*30px)/2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .workers-name {
+    width: 270px;
+    height: 428px;
+    margin: 15px;
   }
 }
 
@@ -621,17 +640,24 @@ header .conteiner {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .workers-name img {
     width: 450px;
     height: 460px;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .workers-name img {
     width: 354px;
     height: 374px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .workers-name img {
+    width: 270px;
+    height: 260px;
   }
 }
 
