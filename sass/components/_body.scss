@@ -14,6 +14,10 @@ body{
 
 }
 
+body.modal-open{
+    overflow: hidden;
+}
+
 .conteiner{
     min-width: 480px;
     margin-left: auto;
