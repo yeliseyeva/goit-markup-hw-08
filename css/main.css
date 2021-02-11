@@ -293,7 +293,15 @@ header .conteiner {
 }
 
 .address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
   margin-left: 40px;
+  margin-bottom: 64px;
 }
 
 @media screen and (min-width: 768px) {
@@ -315,7 +323,7 @@ header .conteiner {
 
 @media screen and (max-width: 767px) {
   .address li:not(:last-child) {
-    margin-bottom: 32px;
+    margin-top: 32px;
   }
 }
 
@@ -341,11 +349,23 @@ header .conteiner {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 767px) {
+  .address .tel {
+    color: #2196F3;
+  }
+}
+
 .icon-contacts {
   fill: currentColor;
   margin-right: 10px;
   height: 16px;
   width: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .icon-contacts {
+    display: none;
+  }
 }
 
 .icon-contacts .icon-milo {
@@ -362,6 +382,22 @@ header .conteiner {
 .nav a:focus,
 .address a:hover,
 .address a:focus {
+  color: #2196F3;
+}
+
+.social-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 40px;
+}
+
+.social-menu li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.social-menu a {
+  font-size: 18px;
   color: #2196F3;
 }
 
