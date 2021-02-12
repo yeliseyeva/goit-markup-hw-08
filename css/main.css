@@ -401,6 +401,10 @@ header .conteiner {
   color: #2196F3;
 }
 
+body {
+  background-color: tomato;
+}
+
 .hero {
   width: 480px;
   margin-left: auto;

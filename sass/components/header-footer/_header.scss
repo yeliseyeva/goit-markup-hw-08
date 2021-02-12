@@ -212,6 +212,7 @@ header{
 
     }
 
+
     .tel{
         @media screen and (max-width: 767px){
             color: $accent-color;
@@ -258,4 +259,8 @@ header{
         font-size: 18px;
         color: $accent-color;
     }
+}
+
+body{
+    background-color: tomato;
 }
