@@ -1,14 +1,4 @@
-
-
-
-
-
-
 header{
-
-
-
-
     background-color: #fff;
 
     font-weight: 500;
@@ -27,18 +17,13 @@ header{
         top:0;
         left: 0;
         z-index: 1;
-
-
     }
 
     .header-conteiner{
-
         position: relative;
         display: flex;
         align-items: center;
     }
-
-
 }
 
 .logo-header{
@@ -62,7 +47,7 @@ header{
 .menu-button{
     margin-left: auto;
 
-    z-index: 1;
+    z-index: 2;
 
     background-color: #fff;
 
@@ -89,11 +74,12 @@ header{
 
 
 .menu-conteiner{
+    z-index: 1;
+    width: 100%;
     @media screen and (max-width: 767px){
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
         min-height: 100%;
         padding: 48px 40px;
 
@@ -110,11 +96,6 @@ header{
         display: flex;
     }
 }
-
-// .main-nav{
-//     display: flex;
-//     align-items: center;
-// }
 
 .nav{
 
@@ -160,9 +141,6 @@ header{
             margin-right: 50px;
         }
     }
-
-
-
 }
 
 .current::after{
@@ -185,10 +163,6 @@ header{
 }
 
 .address{
-
-    // margin-bottom: 0;
-    // align-items: center;
-
     @media screen and (max-width: 767px){
         display: flex;
         flex-direction: column-reverse;
@@ -197,20 +171,19 @@ header{
 
     @media screen and (min-width: 768px){
         display: block;
-        margin-left: 84px;
+        margin-left: auto;
         padding: 21px 0;
     }
 
     @media screen and (min-width: 1200px){
         display: flex;
         padding: 32px 0px;
-        margin-left: 305px;
+        margin-left: auto;
     }
 
     li:not(:last-child){
         @media screen and (max-width: 767px){
             margin-top: 32px;
-            // color: $accent-color;
         }
 
         @media screen and (min-width: 768px) and (max-width: 1199px){
@@ -225,16 +198,9 @@ header{
     a{
         display: flex;
 
-        // font-size: 34px;
-
-
         color: $secondary-text-color;
     
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-        // @media screen and (max-width: 1199px){
-        //     font-size: 12px;
-        // }
 
         @media screen and (max-width: 767px){
             font-size: 24px;

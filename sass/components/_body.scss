@@ -5,7 +5,7 @@ body{
     font-size: 14px;
     letter-spacing: 0.03em;
 
-    background-color: tomato;
+    background-color: #fff;
     color: $primary-text-color;
 
     @media screen and (max-width: 767px){
@@ -19,13 +19,11 @@ body.modal-open{
 }
 
 .conteiner{
-    min-width: 480px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-
-
 
     @media screen and (min-width: 480px){
         width: 480px;
@@ -44,7 +42,6 @@ h2{
 
     font-weight: 700;
     font-size: 36px;
-    // line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
 

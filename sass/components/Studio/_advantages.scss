@@ -10,17 +10,9 @@
     @media screen and (min-width: 1200px){
         flex-wrap: nowrap;
     }
-
-
-    // li:not(:last-child){
-    //     margin-right: 30px;
-    // }
 }
 
 .advantages-item{
-
-    
-
     &:not(:last-child){
         @media screen and (max-width: 767px){
             margin-bottom: 30px;
@@ -31,9 +23,6 @@
         width: calc((100% - 2 * 30px) / 2);
         margin: 15px;
     }
-
-
-
 }
 
 .advanages-svg{
@@ -42,7 +31,12 @@
 
     background-color: #F5F4FA;
 
-    @media screen and (max-width: 767px){
+    @media screen and (max-width: 479px){
+        height: 120px;
+        width: 100%;
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 767px){
         height: 120px;
         width: 450px;
     }

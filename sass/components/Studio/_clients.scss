@@ -1,16 +1,13 @@
 .clients{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin: -15px;
 
 
     .clients-item{
         margin: 15px;
     }
-
-    // .clients-item:not(:last-child){
-    //     margin-right: 30px;
-    // }
 }
 
 .clients-link{
