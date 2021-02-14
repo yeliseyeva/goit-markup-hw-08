@@ -144,7 +144,7 @@ b {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -1506,6 +1506,10 @@ footer {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.projects {
+  margin: -15px;
+}
+
 .projects p {
   font-weight: 400;
   font-size: 16px;
@@ -1515,36 +1519,19 @@ footer {
 
 .projects li {
   width: 100%;
+  margin: 15px;
   border: solid 1px #eeeeee;
 }
 
 @media screen and (min-width: 768px) {
   .projects li {
-    width: 354px;
+    width: calc((100% - 60px) / 2);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .projects li {
-    width: 370px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .projects li:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .projects li:not(:nth-last-child(-n+2)) {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .projects li:not(:nth-last-child(-n+3)) {
-    margin-bottom: 30px;
+    width: calc((100% - 90px) / 3);
   }
 }
 
@@ -1555,24 +1542,6 @@ footer {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .projects li:nth-child(odd) {
-    margin-right: 30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .projects li {
-    margin-right: 30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .projects li:nth-child(3n) {
-    margin-right: 0px;
   }
 }
 
