@@ -8,6 +8,7 @@
 
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 93px;
 
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
@@ -20,7 +21,7 @@
         overflow-y: scroll;
 
         max-width: 450px;
-        height: 609px;
+        // height: 609px;
 
         @media screen and (min-width: 480px) {
             position: absolute;
