@@ -1533,12 +1533,12 @@ footer {
 
 .projects li {
   width: 100%;
-  margin: 15px;
   border: solid 1px #eeeeee;
 }
 
 @media screen and (min-width: 768px) {
   .projects li {
+    margin: 15px;
     width: calc((100% - 60px) / 2);
   }
 }
